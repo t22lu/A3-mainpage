@@ -2,6 +2,7 @@
 <html lang="eng-ca">
   <head>
     <meta charset="utc-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website: Portfolio</title>
     <!-- Created by Tiffany Lu on November 25, 2024-->
     
@@ -18,17 +19,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cantora+One&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   
+  
   <style>
     body{
       background-color: #FFF9F2
     }
-    .desktop {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  .desktop {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #004759;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Cantora One", sans-serif;
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #fda959;
+}
+
 
 .desktop .div {
   background-color: #ffffff;
@@ -163,15 +198,6 @@
   height: 44px;
   top: 4px;
   left: 0;
-}
-
-.desktop .frame-2 {
-  display: inline-flex;
-  align-items: center;
-  gap: 17px;
-  position: absolute;
-  top: 20px;
-  left: 804px;
 }
 
 .desktop .text-wrapper-5 {
@@ -319,14 +345,10 @@
           <img class="IMG" src="Frontpage-image.jpg" />
           <div class="text-wrapper-3">Portfolio</div>
           <div class="group">
-            <div class="text-wrapper-4">Tiffany Lu</div>
-            <img class="star" src="img/star-1.png" />
           </div>
-          <div class="frame-2">
-            <div class="text-wrapper-5">Graphic Design</div>
-            <div class="text-wrapper-6">Illustration</div>
-            <div class="text-wrapper-7">Photography</div>
-          </div>
+          
+      <!--body content--> 
+          
         </div>
         <div class="frame-3">
           <div class="hello-i-m-tiffany">Hello, <br />I’m Tiffany</div>
@@ -342,6 +364,18 @@
           <div class="rectangle-4"></div>
           <img class="fxn" src="Image of me.jpeg"/>
         </div>
+        
+        <!--Header-->
+          <div class="header">
+            <div class="name">Tiffany Lu 
+              <img class="star" src="img/star-1.png">
+            </div>
+            <div class="links">
+              <a href="/">Graphic Design</a>
+              <a href="/">Ilustration</a>
+              <a href="/">Photography</a>
+            </div>
+          </div>
       </div>
     </div>
 
