@@ -32,7 +32,16 @@
     justify-content: center;
     width: 100%;
 }
-    
+  .desktop .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 3540px;
+    position: relative;
+}
+
+ 
+/*header*/    
   .header {
     position: fixed;
     top: 0;
@@ -43,6 +52,13 @@
     padding: 10px 20px;
     font-family: "Cantora One", sans-serif;
 }
+  .desktop .star {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 14px;
+  }
 
   .name {
     display: absolute;
@@ -56,6 +72,7 @@
   .links {
     display: flex;
     gap: 20px;
+    padding-right: 14px;
   }
 
   .links a {
@@ -68,16 +85,8 @@
   .links a:hover {
     color: #fda959;
   }
-
-
-.desktop .div {
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 1440px;
-  height: 3540px;
-  position: relative;
-}
-
+ 
+  /*Footer*/
 .desktop .rectangle {
   position: absolute;
   width: 1582px;
@@ -86,7 +95,8 @@
   left: -45px;
   background-color: #004759;
 }
-
+    
+/*Top section*/
 .desktop .overlap {
   position: absolute;
   width: 1680px;
@@ -189,15 +199,6 @@
   line-height: normal;
 }
 
-.desktop .star {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 14px;
-  left: 14px;
-}
-
-
 
 .desktop .text-wrapper-7 {
   position: relative;
@@ -297,10 +298,7 @@
 .desktop .about-me a:hover {
   background-color: #e38b41;
 }
-
-
-
-  </style>
+</style>
   
   <body>
     <div class="desktop">
@@ -310,12 +308,12 @@
         <div class="overlap">
           <div class="rectangle-2"></div>
           <div class="text-wrapper">Portfolio</div>
-          <div class="frame"><div class="text-wrapper-2">Portfolio</div></div>
+          <div class="frame">
+            <div class="text-wrapper-2">Portfolio</div>
+          </div>
           <div class="rectangle-3"></div>
           <img class="IMG" src="Frontpage-image.jpg" alt="picture of Tiffany with hands covering face">
           <div class="text-wrapper-3">Portfolio</div>
-          <div class="group">
-          </div>
           
       <!--body content--> 
           
