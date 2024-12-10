@@ -5,340 +5,410 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website: Portfolio</title>
     <!-- Created by Tiffany Lu on November 25, 2024-->
-    
+
     <!--Google font embed-->
-    
+
     <!--Font for body text-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
+
     <!--Font for headers-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cantora+One&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--
+Code copied from: [https://www.w3schools.com/html/html_tables.asp]
+Author: W3Schools
+Name: html-tables
+Description: table element, with moditfications according to my website 
+Date retrieved: December 9, 2024
+-->
+     <!--
+Code copied from: [https://www.w3schools.com/cssref/css3_pr_border-radius.php]
+Author: W3Schools
+Name: border-radius
+Description: Use of border radius in creating accents and elements to the background
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke]
+Author: MDN
+Name: -web-kit-text-stroke
+Description: CSS short hand of stroke colour for text
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://www.w3schools.com/css/css3_flexbox.asp]
+Author: W3Schools
+Name: CSS Flex-box
+Description: Used for positioning elements 
+Date retrieved: December 9, 2024
+-->
+
   </head>
-  
-  
+
+
   <style>
-    body{
+    body {
       margin: 0;
     }
-    
-  .desktop {
-    background-color: #FFF9F2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-  .desktop .div {
-    background-color: #ffffff;
-    overflow: hidden;
-    width: 100%;
-    height: 3540px;
-    position: relative;
-}
 
- 
-/*header*/    
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #004759;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: "Cantora One", sans-serif;
-}
-  .desktop .star {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 14px;
-    left: 14px;
-  }
+    .desktop {
+      background-color: #FFF9F2;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
 
-  .name {
-    display: absolute;
-    align-items: center;
-    font-size: 24px;
-    color: white;
-    padding-left: 20px;
-    margin-right: auto;
-  } 
-    
-  .links {
-    display: flex;
-    gap: 20px;
-    padding-right: 60px;
-  }
-
-  .links a {
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .links a:hover {
-    color: #fda959;
-  }
- 
-  /*Footer*/
-.desktop .rectangle {
-  position: absolute;
-  top: 3010px;
-  width: 100vw;
-  background-color: #004759;
-  height: 530px;
-}
-    
-/*Top section*/
+    .desktop .div {
+      background-color: #ffffff;
+      overflow: hidden;
+      width: 100%;
+      height: 3540px;
+      position: relative;
+    }
 
 
-.desktop .rectangle-2 {
-  width: 100vw; 
-  height: 120vh; 
-  top: 0;
-  left: 0;
-  background-color: #004759;
-}
+    /*header*/
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #004759;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: "Cantora One", sans-serif;
+    }
 
-.desktop .text-wrapper {
-  position: absolute;
-  width: 989px;
-  top: 723px;
-  left: 691px;
-  -webkit-text-stroke: 1px #ffffff;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  color: transparent;
-  font-size: 200px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .desktop .star {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 14px;
+      left: 14px;
+    }
 
-.desktop .frame {
-  display: flex;
-  flex-direction: column;
-  width: 989px;
-  height: 201px;
-  align-items: flex-start;
-  position: absolute;
-  top: 202px;
-  left: 674px;
-}
+    .name {
+      display: absolute;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+      padding-left: 20px;
+      margin-right: auto;
+    }
 
-.desktop .text-wrapper-2 {
-  position: relative;
-  align-self: stretch;
-  height: 201px;
-  margin-top: -2.00px;
-  margin-left: -1.00px;
-  color: transparent;
-  white-space: nowrap;
-  -webkit-text-stroke: 1px #ffffff;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  font-size: 200px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .links {
+      display: flex;
+      gap: 20px;
+      padding-right: 60px;
+    }
 
-.desktop .rectangle-3 {
-  width: 100vw;
-  height: 331px;
-  top: 1023px;
-  left: 7px;
-  background-color: #070d12;
-}
+    .links a {
+      font-family: "Cabin", sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
 
-.desktop .IMG {
-  position: absolute;
-  width: 686px;
-  height: 819px;
-  top: 320px;
-  left: 118px;
-}
+    .links a:hover {
+      color: #fda959;
+    }
 
-.desktop .text-wrapper-3 {
-  position: absolute;
-  width: 989px;
-  top: 485px;
-  left: 691px;
-  color: #ffffff;
-  -webkit-text-stroke: 1px #ffffff;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  font-size: 200px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    /*Footer*/
+    .desktop .rectangle {
+      position: absolute;
+      top: 3010px;
+      width: 100vw;
+      background-color: #004759;
+      height: 530px;
+    }
 
-.desktop .text-wrapper-4 {
-  position: absolute;
-  width: 340px;
-  top: 0;
-  left: 44px;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 48px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    /*Top section*/
+
+    .desktop .rectangle-2 {
+      width: 100vw;
+      height: 120vh;
+      top: 0;
+      left: 0;
+      background-color: #004759;
+    }
+
+    .desktop .text-wrapper {
+      position: absolute;
+      width: 989px;
+      top: 723px;
+      left: 691px;
+      -webkit-text-stroke: 1px #ffffff;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      color: transparent;
+      font-size: 200px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .desktop .frame {
+      display: flex;
+      flex-direction: column;
+      width: 989px;
+      height: 201px;
+      align-items: flex-start;
+      position: absolute;
+      top: 202px;
+      left: 674px;
+    }
+
+    .desktop .text-wrapper-2 {
+      position: relative;
+      align-self: stretch;
+      height: 201px;
+      margin-top: -2.00px;
+      margin-left: -1.00px;
+      color: transparent;
+      white-space: nowrap;
+      -webkit-text-stroke: 1px #ffffff;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      font-size: 200px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .desktop .rectangle-3 {
+      width: 100vw;
+      height: 331px;
+      top: 1023px;
+      left: 7px;
+      background-color: #070d12;
+    }
+
+    .desktop .IMG {
+      position: absolute;
+      width: 686px;
+      height: 819px;
+      top: 320px;
+      left: 118px;
+    }
+
+    .desktop .text-wrapper-3 {
+      position: absolute;
+      width: 989px;
+      top: 485px;
+      left: 691px;
+      color: #ffffff;
+      -webkit-text-stroke: 1px #ffffff;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      font-size: 200px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
 
-.desktop .text-wrapper-7 {
-  position: relative;
-  width: 213px;
-  height: 68px;
-  margin-top: -1.00px;
-  font-family: "Cabin-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffffb0;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
 
-.desktop .overlap-group-wrapper {
-  position: relative;
-  width: 496px;
-  height: 74px;
-}
+    .desktop .overlap-group-wrapper {
+      position: relative;
+      width: 496px;
+      height: 74px;
+    }
 
-.desktop .overlap-group {
-  position: relative;
-  width: 494px;
-  height: 74px;
-  background-color: #fda959;
-  border-radius: 23px;
-}
+    .desktop .overlap-group {
+      position: relative;
+      width: 494px;
+      height: 74px;
+      background-color: #fda959;
+      border-radius: 23px;
+    }
 
-.desktop .overlap-2 {
-  position: absolute;
-  width: 679px;
-  height: 935px;
-  top: 1549px;
-  left: 50px;
-}
+    .desktop .overlap-2 {
+      position: absolute;
+      width: 679px;
+      height: 935px;
+      top: 1549px;
+      left: 50px;
+    }
 
-.desktop .portrait-img {
-  position: absolute;
-  width: 615px;
-  height: 811px;
-  top: -124px;
-  left: -64px; 
-  border-radius: 50px;
-}
-    
-.desktop .rounded-rectangle {
-  position: absolute;
-  width: 615px;
-  height: 811px;
-  top: 124px;
-  left: 64px;
-  background-color: #004759;
-  border-radius: 50px;
-}
-    
-/*about me text section*/
- .desktop .about-me{
-  display: flex;
-  flex-direction: column;
-  width: 594px;
-  align-items: flex-start;
-  padding: 0px 0px 6px;
-  position: absolute;
-  top: 1678px;
-  left: 797px;
-}   
+    .desktop .portrait-img {
+      position: absolute;
+      width: 615px;
+      height: 811px;
+      top: -124px;
+      left: -64px;
+      border-radius: 50px;
+    }
 
-.desktop .about-me h1 {
-  font-family: "Cantora One", sans-serif;
-  font-size: 90px;
-  color: #004759;
-  margin-bottom: 10px;
-  float: left;
-}
+    .desktop .rounded-rectangle {
+      position: absolute;
+      width: 615px;
+      height: 811px;
+      top: 124px;
+      left: 64px;
+      background-color: #004759;
+      border-radius: 50px;
+    }
 
-.desktop .about-me p {
-  font-family: "Cabin", sans-serif;
-  font-size: 30px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 20px;
-  float: left;
-}
+    /*about me text section*/
+    .desktop .about-me {
+      display: flex;
+      flex-direction: column;
+      width: 594px;
+      align-items: flex-start;
+      padding: 0px 0px 6px;
+      position: absolute;
+      top: 1678px;
+      left: 797px;
+    }
 
-.desktop .about-me a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fda959;
-  color: #000;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 23px;
-  font-family: "Cabin", sans-serif;
-}
+    .desktop .about-me h1 {
+      font-family: "Cantora One", sans-serif;
+      font-size: 90px;
+      color: #004759;
+      margin-bottom: 10px;
+      float: left;
+    }
 
-.desktop .about-me a:hover {
-  background-color: #e38b41;
-}
-</style>
-  
+    .desktop .about-me p {
+      font-family: "Cabin", sans-serif;
+      font-size: 30px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .desktop .about-me a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fda959;
+      color: #000;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 23px;
+      font-family: "Cabin", sans-serif;
+    }
+
+    .desktop .about-me a:hover {
+      background-color: #e38b41;
+    }
+
+    .info-table {
+      display: block;
+      position: relative;
+      top: 1000px;
+      right: -100px;
+      margin: 50px;
+      width: 80%;
+      text-align: left;
+      font-family: "Cabin", sans-serif;
+    }
+
+    .info-table h2 {
+      font-size: 36px;
+      color: #004759;
+      margin-bottom: 20px;
+
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 18px;
+      color: #333;
+    }
+
+    thead th {
+      background-color: #004759;
+      color: white;
+      padding: 10px;
+    }
+
+    tbody td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+
   <body>
     <div class="desktop">
-      
+
       <div class="div">
         <div class="rectangle"></div>
-        
-          <div class="rectangle-2"></div>
-          <div class="text-wrapper">Portfolio</div>
-          <div class="frame">
-            <div class="text-wrapper-2">Portfolio</div>
-          </div>
-          <div class="rectangle-3"></div>
-          <img class="IMG" src="Frontpage-image.jpg" alt="picture of Tiffany with hands covering face">
-          <div class="text-wrapper-3">Portfolio</div>
-          
-      <!--body content--> 
-          
-      
-        
+
+        <div class="rectangle-2"></div>
+        <div class="text-wrapper">Portfolio</div>
+        <div class="frame">
+          <div class="text-wrapper-2">Portfolio</div>
+        </div>
+        <div class="rectangle-3"></div>
+        <img class="IMG" src="Frontpage-image.jpg" alt="picture of Tiffany with hands covering face">
+        <div class="text-wrapper-3">Portfolio</div>
+
+        <!--body content-->
+
         <div class="about-me">
-          <h1>Hello, I’m Tiffany</h1> 
+          <h1>Hello, I’m Tiffany</h1>
           <p>
             I am GBDA student at the University of Waterloo. I am aspiring creative designer. Currently I am interested in graphic design, photography, and illustration!
           </p>
           <a href="www.linkedin.com/in/tiffany-lu-b53489252" class="linkedin">Visit My Linkedin</a>
-          
+
         </div>
         <div class="overlap-2">
           <div class="rounded-rectangle">
-          <img class="portrait-img" src="Image of me.jpeg" alt="Tiffany's portrait"></div>
-          
-        </div>
-        
-        <!--Header-->
-          <div class="header">
-            <div class="name">
-              <img class="star" src="Star 1 (1).png" alt="Star Icon">Tiffany Lu
-            </div>
-            <div class="links">
-              <a href="https://t22lu.github.io/A3-Graphic-Design/">Graphic Design</a>
-              <a href="/">Ilustration</a>
-              <a href="/">Photography</a>
-            </div>
+            <img class="portrait-img" src="Image of me.jpeg" alt="Tiffany's portrait">
           </div>
-        
+
+        </div>
+
+        <!--Header-->
+        <div class="header">
+          <div class="name">
+            <img class="star" src="Star 1 (1).png" alt="Star Icon">Tiffany Lu
+          </div>
+          <div class="links">
+            <a href="https://t22lu.github.io/A3-Graphic-Design/">Graphic Design</a>
+            <a href="/">Ilustration</a>
+            <a href="/">Photography</a>
+          </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="info-table">
+          <h2>My Skills and Interests</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Design Tools</td>
+                <td>Photoshop, Illustrator, Figma</td>
+              </tr>
+              <tr>
+                <td>Photography</td>
+                <td>Portrait, Landscape, Event</td>
+              </tr>
+              <tr>
+                <td>Illustration</td>
+                <td>Digital, Traditional Sketching</td>
+              </tr>
+              <tr>
+                <td>Languages</td>
+                <td>HTML, CSS, JavaScript</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      
+
     </div>
   </body>
 </html>
-
